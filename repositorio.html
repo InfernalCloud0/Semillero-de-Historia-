@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Biblioteca Digital | Semillero de Investigación</title>
+
+    <link rel="stylesheet"
+          href="css/estilos.css">
+
+    <!-- Estilos específicos de la biblioteca -->
+    <link rel="stylesheet"
+          href="css/biblioteca.css">
+<javascript>
+    <script src="js/biblioteca.js" defer></script>
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="contenedor header-contenido">
+
+
+             <a href="index.html" class="logo mi-logo">
+                <img src="images/logo.png" alt="Logo del Semillero de Investigación" style="width: 50px; height: auto;">
+                Semillero de Investigación
+            </a>
+
+
+
+            <!-- MENÚ -->
+
+            <nav class="navegacion">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="investigacion.html">
+                            Investigación
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="repositorio.html"
+                           class="activo">
+
+                            Biblioteca Digital
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="proyectos.html">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="publicaciones.html">
+                            Publicaciones
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             ENCABEZADO DE LA BIBLIOTECA
+        ================================================== -->
+
+        <section class="biblioteca-hero">
+
+            <div class="contenedor">
+
+
+                <p class="etiqueta">
+                    REPOSITORIO
+                </p>
+
+
+                <h1>
+                    Biblioteca Digital
+                </h1>
+
+
+                <p class="biblioteca-introduccion">
+
+                    Un espacio para consultar, explorar y compartir
+                    documentos, libros y recursos relacionados con
+                    nuestras líneas de investigación en Ciencias Sociales.
+
+                </p>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             BIBLIOTECA
+        ================================================== -->
+
+        <section class="biblioteca-seccion">
+
+            <div class="contenedor">
+
+
+                <!-- TÍTULO -->
+
+                <div class="biblioteca-encabezado">
+
+                    <div>
+
+                        <p class="etiqueta">
+                            COLECCIÓN
+                        </p>
+
+                        <h2>
+                            Explora el repositorio
+                        </h2>
+
+                    </div>
+
+
+                    <p class="cantidad">
+
+                        <span id="cantidad-carpetas">
+                            8
+                        </span>
+
+                        categorías disponibles
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     BUSCADOR
+                ================================================== -->
+
+                <div class="buscador">
+
+
+                    <label
+                        for="buscador"
+                        class="buscador-label">
+
+                        Buscar en la biblioteca
+
+                    </label>
+
+
+                    <div class="buscador-contenido">
+
+
+                        <input
+                            type="text"
+                            id="buscador"
+                            placeholder="Buscar por categoría..."
+                            autocomplete="off">
+
+
+                        <span class="icono-busqueda">
+                            ⌕
+                        </span>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     CARPETAS
+                ================================================== -->
+
+                <div
+                    class="carpetas"
+                    id="carpetas">
+
+
+                    <!-- =============================================
+                         CIENCIAS SOCIALES
+                    ============================================== -->
+
+                    <article
+                        class="carpeta"
+                        data-nombre="ciencias sociales y políticas">
+
+                        <div class="carpeta-numero">
+                            01
+                        </div>
+
+
+                        <div class="icono-carpeta">
+                            📁
+                        </div>
+
+
+                        <div class="carpeta-contenido">
+
+                            <h3>
+                                Ciencias Sociales y Políticas
+                            </h3>
+
+
+                            <p>
+
+                                Documentos y recursos relacionados
+                                con las Ciencias Sociales y las
+                                dinámicas políticas y sociales.
+
+                            </p>
+
+
+                            <a
+                                href="https://drive.google.com/drive/folders/1h2IA60eL7YHQDJU18GUcLlZctD1ZgleD"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="boton-carpeta">
+
+                                Explorar carpeta
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =============================================
+                         COLOMBIA
+                    ============================================== -->
+
+                    <article
+                        class="carpeta"
+                        data-nombre="colombia">
+
+                        <div class="carpeta-numero">
+                            02
+                        </div>
+
+
+                        <div class="icono-carpeta">
+                            📁
+                        </div>
+
+
+                        <div class="carpeta-contenido">
+
+                            <h3>
+                                Colombia
+                            </h3>
+
+
+                            <p>
+
+                                Materiales relacionados con la
+                                historia, sociedad, territorio
+                                y cultura colombiana.
+
+                            </p>
+
+
+                            <a
+                                href="https://drive.google.com/drive/folders/1_5K1wH-kgye_1jHW8T6x0X7tCCbXNzW5"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="boton-carpeta">
+
+                                Explorar carpeta
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =============================================
+                         COMISIÓN DE LA VERDAD
+                    ============================================== -->
+
+                    <article
+                        class="carpeta"
+                        data-nombre="comisión de la verdad">
+
+                        <div class="carpeta-numero">
+                            03
+                        </div>
+
+
+                        <div class="icono-carpeta">
+                            📁
+                        </div>
+
+
+                        <div class="carpeta-contenido">
+
+                            <h3>
+                                Comisión de la Verdad
+                            </h3>
+
+
+                            <p>
+
+                                Documentos relacionados con memoria,
+                                verdad, conflicto armado y procesos
+                                de construcción de memoria histórica.
+
+                            </p>
+
+
+                            <a
+                                href="https://drive.google.com/drive/folders/1ZzGTMTEu2FeXCJ_XjYX_uYdjxdqRKcsf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="boton-carpeta">
+
+                                Explorar carpeta
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =============================================
+                         DECOLONIALIDAD
+                    ============================================== -->
+
+                    <article
+                        class="carpeta"
+                        data-nombre="decolonialidad">
+
+                        <div class="carpeta-numero">
+                            04
+                        </div>
+
+
+                        <div class="icono-carpeta">
+                            📁
+                        </div>
+
+
+                        <div class="carpeta-contenido">
+
+                            <h3>
+                                Decolonialidad
+                            </h3>
+
+
+                            <p>
+
+                                Recursos relacionados con pensamiento
+                                crítico, perspectivas decoloniales y
+                                cuestionamiento de estructuras de poder.
+
+                            </p>
+
+
+                            <a
+                                href="https://drive.google.com/drive/folders/16wJ2KGbciXrXBQEh3TYtQyZW8zf_GXic"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="boton-carpeta">
+
+                                Explorar carpeta
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =============================================
+                         ENCÍCLICAS
+                    ============================================== -->
+
+                    <article
+                        class="carpeta"
+                        data-nombre="encíclicas papa francisco">
+
+                        <div class="carpeta-numero">
+                            05
+                        </div>
+
+
+                        <div class="icono-carpeta">
+                            📁
+                        </div>
+
+
+                        <div class="carpeta-contenido">
+
+                            <h3>
+                                Encíclicas Papa Francisco
+                            </h3>
+
+
+                            <p>
+
+                                Documentos y textos relacionados
+                                con las encíclicas y reflexiones
+                                sociales del Papa Francisco.
+
+                            </p>
+
+
+                            <a
+                                href="https://drive.google.com/drive/folders/1sMpXMh86XFak6Uej-v6Z9_Ir18UcTHIW"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="boton-carpeta">
+
+                                Explorar carpeta
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =============================================
+                         GÉNERO
+                    ============================================== -->
+
+                    <article
+                        class="carpeta"
+                        data-nombre="género sexualidad mujeres">
+
+                        <div class="carpeta-numero">
+                            06
+                        </div>
+
+
+                        <div class="icono-carpeta">
+                            📁
+                        </div>
+
+
+                        <div class="carpeta-contenido">
+
+                            <h3>
+                                Género, Sexualidad y Mujeres
+                            </h3>
+
+
+                            <p>
+
+                                Recursos relacionados con estudios
+                                de género, sexualidad y perspectivas
+                                sobre las mujeres.
+
+                            </p>
+
+
+                            <a
+                                href="https://drive.google.com/drive/folders/1JLSQiiWE3vssS1trrMg7NxrqMJGiGVMI"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="boton-carpeta">
+
+                                Explorar carpeta
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =============================================
+                         LATINOAMÉRICA
+                    ============================================== -->
+
+                    <article
+                        class="carpeta"
+                        data-nombre="latinoamérica">
+
+                        <div class="carpeta-numero">
+                            07
+                        </div>
+
+
+                        <div class="icono-carpeta">
+                            📁
+                        </div>
+
+
+                        <div class="carpeta-contenido">
+
+                            <h3>
+                                Latinoamérica
+                            </h3>
+
+
+                            <p>
+
+                                Documentos y recursos sobre historia,
+                                sociedad, cultura y pensamiento
+                                latinoamericano.
+
+                            </p>
+
+
+                            <a
+                                href="https://drive.google.com/drive/folders/1BSzVEcSWYpFDG-diTgDrCnw54fRZJC-S"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="boton-carpeta">
+
+                                Explorar carpeta
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =============================================
+                         PEDAGOGÍA
+                    ============================================== -->
+
+                    <article
+                        class="carpeta"
+                        data-nombre="pedagogía educación">
+
+                        <div class="carpeta-numero">
+                            08
+                        </div>
+
+
+                        <div class="icono-carpeta">
+                            📁
+                        </div>
+
+
+                        <div class="carpeta-contenido">
+
+                            <h3>
+                                Pedagogía y Educación
+                            </h3>
+
+
+                            <p>
+
+                                Materiales relacionados con educación,
+                                pedagogía, enseñanza y formación
+                                docente.
+
+                            </p>
+
+
+                            <a
+                                href="https://drive.google.com/drive/folders/1nFXjYZsVt80BsrQ6R0385OPm4yYVEyXu"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="boton-carpeta">
+
+                                Explorar carpeta
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     SIN RESULTADOS
+                ================================================== -->
+
+                <div
+                    id="sin-resultados"
+                    class="sin-resultados">
+
+                    <div class="sin-resultados-icono">
+                        ∅
+                    </div>
+
+                    <h3>
+                        No encontramos resultados
+                    </h3>
+
+                    <p>
+                        Intenta buscar otra categoría o palabra.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MENSAJE FINAL
+        ================================================== -->
+
+        <section class="biblioteca-final">
+
+            <div class="contenedor">
+
+                <p class="etiqueta">
+                    CONOCIMIENTO ABIERTO
+                </p>
+
+                <h2>
+                    Investigar también es compartir.
+                </h2>
+
+                <p>
+                    Este repositorio reúne recursos que pueden
+                    contribuir al estudio, la enseñanza y la
+                    investigación en Ciencias Sociales.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="contenedor">
+
+            <p>
+                © 2026 Semillero de Investigación.
+                Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/biblioteca.js"></script>
+
+</body>
+
+</html>
