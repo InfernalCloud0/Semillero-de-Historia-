@@ -1,10 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-
-    /* =================================================
-       ELEMENTOS
-    ================================================= */
-
     const buscador =
         document.getElementById("buscador");
 
@@ -18,10 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("cantidad-carpetas");
 
 
-    /* =================================================
-       CONTADOR INICIAL
-    ================================================= */
-
     if (cantidad) {
 
         cantidad.textContent =
@@ -29,10 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-
-    /* =================================================
-       BUSCADOR
-    ================================================= */
 
     buscador.addEventListener("input", () => {
 
@@ -73,9 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        /* =============================================
-           RESULTADOS
-        ============================================== */
 
         if (resultados === 0) {
 
@@ -88,9 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
-        /* =============================================
-           ACTUALIZAR CONTADOR
-        ============================================== */
 
         if (cantidad) {
 

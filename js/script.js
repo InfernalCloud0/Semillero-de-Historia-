@@ -1,13 +1,5 @@
-/* =====================================================
-   SCRIPT PRINCIPAL
-===================================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
 
-
-    /* =================================================
-       ANIMACIÓN DE SECCIONES
-    ================================================= */
 
     const elementos = document.querySelectorAll(
         ".seccion, .linea, .proyecto"
@@ -44,10 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-
-    /* =================================================
-       ENLACES DEL MENÚ
-    ================================================= */
 
     const enlaces = document.querySelectorAll(
         ".navegacion a"
