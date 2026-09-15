@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Angie Caballero | Trinchera Pedagógica</title>
+
+    <!-- CSS general del sitio -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- CSS específico -->
+    <link rel="stylesheet" href="css/nosotros.css">
+
+
+    <style>
+
+        /* =========================================
+           PERFIL INDIVIDUAL
+        ========================================= */
+
+        .perfil {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 80px 30px;
+        }
+
+
+        /* =========================================
+           VOLVER
+        ========================================= */
+
+        .perfil-volver {
+            margin-bottom: 50px;
+        }
+
+        .perfil-volver a {
+            color: var(--gris-claro);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .perfil-volver a:hover {
+            color: var(--rojo-claro);
+        }
+
+
+        /* =========================================
+           ENCABEZADO
+        ========================================= */
+
+        .perfil-header {
+            display: grid;
+            grid-template-columns: 330px 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+
+        .perfil-foto {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+
+            border: 1px solid rgba(238, 233, 225, 0.15);
+
+            filter: grayscale(10%);
+
+            display: block;
+        }
+
+
+        .perfil-info {
+            border-left: 2px solid var(--rojo);
+            padding-left: 35px;
+        }
+
+
+        .perfil-etiqueta {
+            color: var(--rojo-claro);
+
+            text-transform: uppercase;
+
+            letter-spacing: 3px;
+
+            font-size: 0.72rem;
+
+            margin-bottom: 18px;
+        }
+
+
+        .perfil-nombre {
+            color: var(--blanco);
+
+            font-size: clamp(2.8rem, 6vw, 5rem);
+
+            line-height: 0.95;
+
+            margin-bottom: 28px;
+
+            font-weight: 700;
+        }
+
+
+        .perfil-cargo {
+            color: var(--gris-claro);
+
+            font-size: 1.15rem;
+
+            line-height: 1.5;
+
+            margin-bottom: 8px;
+        }
+
+
+        .perfil-programa {
+            color: var(--gris);
+
+            font-size: 0.95rem;
+        }
+
+
+        /* =========================================
+           SECCIONES
+        ========================================= */
+
+        .perfil-seccion {
+            margin-bottom: 80px;
+        }
+
+
+        .perfil-seccion-titulo {
+            display: flex;
+
+            align-items: center;
+
+            gap: 20px;
+
+            margin-bottom: 28px;
+        }
+
+
+        .perfil-seccion-titulo span {
+            color: var(--rojo-claro);
+
+            font-size: 0.75rem;
+
+            letter-spacing: 2px;
+        }
+
+
+        .perfil-seccion-titulo h2 {
+            color: var(--blanco);
+
+            font-size: 1.45rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+
+        .perfil-texto {
+            max-width: 850px;
+
+            color: var(--gris-claro);
+
+            font-size: 1.05rem;
+
+            line-height: 1.9;
+        }
+
+
+        /* =========================================
+           LÍNEAS DE INTERÉS
+        ========================================= */
+
+        .perfil-intereses {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 25px;
+        }
+
+
+        .perfil-interes {
+            border: 1px solid rgba(181, 43, 50, 0.55);
+
+            padding: 10px 17px;
+
+            color: var(--gris-claro);
+
+            font-size: 0.82rem;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* =========================================
+           PRODUCCIÓN ACADÉMICA
+        ========================================= */
+
+        .perfil-produccion {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 25px;
+
+            margin-top: 30px;
+        }
+
+
+        .perfil-publicacion {
+            border: 1px solid rgba(238, 233, 225, 0.12);
+
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.02);
+
+            transition: 0.3s;
+        }
+
+
+        .perfil-publicacion:hover {
+            border-color: var(--rojo);
+
+            transform: translateY(-4px);
+        }
+
+
+        .perfil-publicacion small {
+            color: var(--rojo-claro);
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-size: 0.7rem;
+        }
+
+
+        .perfil-publicacion h3 {
+            color: var(--blanco);
+
+            margin: 15px 0;
+
+            font-size: 1.15rem;
+
+            line-height: 1.4;
+        }
+
+
+        .perfil-publicacion p {
+            color: var(--gris);
+
+            font-size: 0.9rem;
+
+            line-height: 1.7;
+        }
+
+
+        .perfil-publicacion a {
+            display: inline-block;
+
+            margin-top: 20px;
+
+            color: var(--rojo-claro);
+
+            text-decoration: none;
+
+            font-size: 0.82rem;
+
+            letter-spacing: 1px;
+
+            transition: 0.3s;
+        }
+
+
+        .perfil-publicacion a:hover {
+            color: var(--blanco);
+        }
+
+
+        /* =========================================
+           PROYECTOS
+        ========================================= */
+
+        .perfil-proyecto {
+            max-width: 850px;
+
+            border-left: 2px solid var(--rojo);
+
+            padding-left: 25px;
+
+            color: var(--gris-claro);
+
+            line-height: 1.8;
+        }
+
+
+        /* =========================================
+           CITA
+        ========================================= */
+
+        .perfil-cita {
+            margin-top: 110px;
+
+            padding: 65px 40px;
+
+            border-top: 1px solid rgba(238, 233, 225, 0.15);
+
+            border-bottom: 1px solid rgba(238, 233, 225, 0.15);
+
+            text-align: center;
+        }
+
+
+        .perfil-cita blockquote {
+            max-width: 850px;
+
+            margin: 0 auto;
+
+            color: var(--blanco);
+
+            font-size: clamp(1.35rem, 3vw, 2.1rem);
+
+            line-height: 1.55;
+
+            font-style: italic;
+        }
+
+
+        .perfil-cita cite {
+            display: block;
+
+            margin-top: 25px;
+
+            color: var(--rojo-claro);
+
+            font-size: 0.85rem;
+
+            font-style: normal;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+
+        /* =========================================
+           RESPONSIVE
+        ========================================= */
+
+        @media (max-width: 850px) {
+
+            .perfil-header {
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+            }
+
+
+            .perfil-foto {
+                max-width: 320px;
+            }
+
+
+            .perfil-info {
+                border-left: none;
+
+                border-top: 2px solid var(--rojo);
+
+                padding-left: 0;
+
+                padding-top: 25px;
+            }
+
+
+            .perfil-produccion {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .perfil {
+                padding: 55px 20px;
+            }
+
+
+            .perfil-nombre {
+                font-size: 2.8rem;
+            }
+
+
+            .perfil-cita {
+                padding: 45px 20px;
+            }
+
+
+            .perfil-seccion {
+                margin-bottom: 60px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         MENÚ PRINCIPAL
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <a href="index.html">
+                TRINCHERA<br>PEDAGÓGICA
+            </a>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="nosotros.html" class="activo">
+                Nosotros
+            </a>
+
+            <a href="investigacion.html">
+                Investigación
+            </a>
+
+            <a href="repositorio.html">
+                Biblioteca
+            </a>
+
+            <a href="proyectos.html">
+                Proyectos
+            </a>
+
+            <a href="publicaciones.html">
+                Publicaciones
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================================
+         PERFIL
+    ========================================== -->
+
+    <main class="perfil">
+
+
+        <!-- VOLVER -->
+
+        <div class="perfil-volver">
+
+            <a href="nosotros.html">
+                ← Volver al equipo
+            </a>
+
+        </div>
+
+
+
+        <!-- =====================================
+             PRESENTACIÓN
+        ====================================== -->
+
+        <section class="perfil-header">
+
+
+            <!-- FOTO -->
+
+            <img
+                src="img/angie 2.jpeg"
+                alt="Angie Caballero Corredor"
+                class="perfil-foto"
+            >
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="perfil-info">
+
+                <p class="perfil-etiqueta">
+                    Integrante · Trinchera Pedagógica
+                </p>
+
+
+                <h1 class="perfil-nombre">
+
+                    Angie<br>
+                    Caballero
+
+                </h1>
+
+
+                <p class="perfil-cargo">
+
+                    Coordinadora de Comunicación Digital
+                    y Gestión Web
+
+                </p>
+
+
+                <p class="perfil-programa">
+
+                    Licenciatura en Ciencias Sociales
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SOBRE MÍ
+        ====================================== -->
+
+        <section class="perfil-seccion">
+
+
+            <div class="perfil-seccion-titulo">
+
+                <span>
+                    01
+                </span>
+
+                <h2>
+                    Sobre mí
+                </h2>
+
+            </div>
+
+
+            <p class="perfil-texto">
+
+                Estudiante e investigadora en formación de la
+                Licenciatura en Ciencias Sociales, interesada en la
+                relación entre educación, memoria histórica y
+                pensamiento crítico.
+
+                <br><br>
+
+                Su interés académico se orienta hacia la comprensión
+                de los procesos de violencia y conflicto en Colombia,
+                así como hacia las posibilidades de la pedagogía para
+                abordar críticamente el pasado y contribuir a la
+                construcción de una sociedad más consciente de su
+                historia.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================
+             LÍNEAS DE INTERÉS
+        ====================================== -->
+
+        <section class="perfil-seccion">
+
+
+            <div class="perfil-seccion-titulo">
+
+                <span>
+                    02
+                </span>
+
+                <h2>
+                    Líneas de interés
+                </h2>
+
+            </div>
+
+
+            <div class="perfil-intereses">
+
+
+                <span class="perfil-interes">
+                    Memoria histórica
+                </span>
+
+
+                <span class="perfil-interes">
+                    Pedagogía
+                </span>
+
+
+                <span class="perfil-interes">
+                    Violencia y conflicto
+                </span>
+
+
+                <span class="perfil-interes">
+                    Pensamiento crítico
+                </span>
+
+
+                <span class="perfil-interes">
+                    Educación
+                </span>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             PRODUCCIÓN ACADÉMICA
+        ====================================== -->
+
+        <section class="perfil-seccion">
+
+
+            <div class="perfil-seccion-titulo">
+
+                <span>
+                    03
+                </span>
+
+                <h2>
+                    Producción académica
+                </h2>
+
+            </div>
+
+
+            <div class="perfil-produccion">
+
+
+                <!-- PUBLICACIÓN 1 -->
+
+                <article class="perfil-publicacion">
+
+
+                    <small>
+                        Documento de trabajo · 2025
+                    </small>
+
+
+                    <h3>
+
+                        Historia y memoria histórica.
+                        Provincia del Casanare:
+                        del olvido al reconocimiento
+
+                    </h3>
+
+
+                    <p>
+
+                        Producción académica desarrollada en el marco
+                        de la Licenciatura en Ciencias Sociales,
+                        orientada a la relación entre historia,
+                        memoria histórica y reconocimiento de los
+                        procesos sociales y territoriales.
+
+                    </p>
+
+
+                    <a
+                        href="https://repository.ugc.edu.co/items/fb255853-a88f-4417-9364-443f544b2e94"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        Consultar en el repositorio →
+
+                    </a>
+
+
+                </article>
+
+
+
+                <!-- PUBLICACIÓN 2 -->
+
+                <article class="perfil-publicacion">
+
+
+                    <small>
+                        Documento de trabajo
+                    </small>
+
+
+                    <h3>
+
+                        Voces femeninas: legado de las
+                        heroínas comuneras
+
+                    </h3>
+
+
+                    <p>
+
+                        Producción académica centrada en el
+                        reconocimiento de las voces y aportes
+                        de las mujeres vinculadas al movimiento
+                        comunero y a la construcción de la
+                        memoria histórica.
+
+                    </p>
+
+
+                    <a
+                        href="https://repository.ugc.edu.co/items/f6429e92-047f-499a-84b7-40e0ce87cccd"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        Consultar en el repositorio →
+
+                    </a>
+
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             PROYECTOS
+        ====================================== -->
+
+        <section class="perfil-seccion">
+
+
+            <div class="perfil-seccion-titulo">
+
+                <span>
+                    04
+                </span>
+
+                <h2>
+                    Proyectos
+                </h2>
+
+            </div>
+
+
+            <div class="perfil-proyecto">
+
+                <p>
+
+                    Participación en proyectos de investigación,
+                    educación y divulgación desarrollados desde
+                    Trinchera Pedagógica.
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             CITA
+        ====================================== -->
+
+        <section class="perfil-cita">
+
+
+            <blockquote>
+
+                “Nadie educa a nadie, nadie se educa solo,
+                los hombres se educan entre sí con la
+                mediación del mundo.”
+
+            </blockquote>
+
+
+            <cite>
+
+                — Paulo Freire,
+                <i>Pedagogía del oprimido</i>
+
+            </cite>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+
+        <div class="footer-contenido">
+
+
+            <div>
+
+                <h3>
+                    Trinchera Pedagógica
+                </h3>
+
+
+                <p>
+
+                    Investigación, pensamiento crítico y educación
+                    desde las Ciencias Sociales.
+
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    © 2026 Trinchera Pedagógica
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>
